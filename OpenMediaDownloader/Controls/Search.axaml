@@ -1,11 +1,19 @@
-﻿<UserControl xmlns="https://github.com/avaloniaui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="OpenMediaDownloader.Controls.Search">
-    <Grid ColumnDefinitions="*, Auto">
-        <TextBox Name="TextInput" Grid.ColumnSpan="2" CornerRadius="0" Watermark="Paste link here" />
-        <Svg Name="LoadingSvg" IsVisible="False" Grid.Column="1" Path="/Assets/spinner.svg"/>
-    </Grid>
-</UserControl>
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:OpenMediaDownloader.Controls">
+    <Design.PreviewWith>
+        <controls:Search />
+    </Design.PreviewWith>
+
+    <Style Selector="controls|Search">
+        <!-- Set Defaults -->
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Grid ColumnDefinitions="*, Auto">
+                    <TextBox Name="TextInput" Grid.ColumnSpan="2" CornerRadius="0" Watermark="Paste link here" Text="{TemplateBinding SearchInput}" />
+                    <Svg Name="LoadingSvg" IsVisible="False" Grid.Column="1" Path="/Assets/spinner.svg"/>
+                </Grid>
+            </ControlTemplate>
+        </Setter>
+    </Style>
+</Styles>
