@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Net.Http;
+using System.Windows.Input;
 using Avalonia.Interactivity;
 using Avalonia.Media.Imaging;
 using MessageBox.Avalonia.DTO;
@@ -20,10 +22,10 @@ namespace OpenMediaDownloader.ViewModels
         {
             _youtubeDlService = new YoutubeDlService();
         }
-
-        public async void StartDownload(object? sender, RoutedEventArgs routedEventArgs)
+        
+        public async void StartDownload()
         {
-            if (string.IsNullOrEmpty(SearchInput)) return;
+            if (string.IsNullOrEmpty(SearchInput)) return; 
             Console.WriteLine($"Attempting to download {SearchLoading}");
 
             // Download metadata
