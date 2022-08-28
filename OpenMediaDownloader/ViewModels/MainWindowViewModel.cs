@@ -8,14 +8,28 @@ using Avalonia.Media.Imaging;
 using MessageBox.Avalonia.DTO;
 using Open_Media_Downloader.Services;
 using OpenMediaDownloader.Views;
+using ReactiveUI;
 
 namespace OpenMediaDownloader.ViewModels
 {
     public class MainWindowViewModel : ViewModelBase
     {
-        public bool SearchLoading { get; set; }
-        public string SearchInput { get; set; }
+        private bool searchLoading;
 
+        public bool SearchLoading
+        {
+            get => searchLoading;
+            set => this.RaiseAndSetIfChanged(ref searchLoading, value);
+        }
+
+        private string searchInput;
+
+        public string SearchInput
+        {
+            get => searchInput;
+            set => this.RaiseAndSetIfChanged(ref searchInput, value);
+        }
+        
         private readonly IYoutubeDlService _youtubeDlService;
 
         public MainWindowViewModel()
