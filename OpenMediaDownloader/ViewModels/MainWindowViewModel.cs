@@ -13,8 +13,8 @@ namespace OpenMediaDownloader.ViewModels
 {
     public class MainWindowViewModel : ViewModelBase
     {
-        public bool SearchLoading = false;
-        public string SearchInput { get; set; } = "";
+        public bool SearchLoading { get; set; }
+        public string SearchInput { get; set; }
 
         private readonly IYoutubeDlService _youtubeDlService;
 

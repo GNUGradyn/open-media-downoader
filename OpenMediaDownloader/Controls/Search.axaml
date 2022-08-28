@@ -10,7 +10,7 @@
         <Setter Property="Template">
             <ControlTemplate>
                 <Grid ColumnDefinitions="*, Auto">
-                    <TextBox Name="TextInput" Grid.ColumnSpan="2" CornerRadius="0" Watermark="Paste link here" Text="{TemplateBinding SearchInput}" />
+                    <TextBox Name="TextInput" Grid.ColumnSpan="2" CornerRadius="0" Watermark="Paste link here" Text="{TemplateBinding SearchInput, Mode=TwoWay}" />
                     <Svg Name="LoadingSvg" IsVisible="False" Grid.Column="1" Path="/Assets/spinner.svg"/>
                 </Grid>
             </ControlTemplate>

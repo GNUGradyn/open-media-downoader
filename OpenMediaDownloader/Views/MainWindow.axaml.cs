@@ -7,8 +7,6 @@ namespace OpenMediaDownloader.Views
 {
     public partial class MainWindow : Window
     {
-        public ICommand StartDownload;
-
         public MainWindow()
         {
             InitializeComponent();
