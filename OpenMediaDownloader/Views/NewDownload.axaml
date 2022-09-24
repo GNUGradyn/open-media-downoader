@@ -4,11 +4,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="OpenMediaDownloader.Views.NewDownload"
-        Title="NewDownload">
+        Title="NewDownload"
+        Height="800" Width="450">
     <StackPanel Name="Test">
-        <Label FontSize="25" HorizontalAlignment="Center" Content="{Binding Title}" />
-        <Image Source="{Binding Thumbnail}" HorizontalAlignment="Stretch"  Width="{Binding #Test.Bounds.Width}"></Image>
-        <Grid ColumnDefinitions="*, *">
-        </Grid>
+        <Label FontSize="25" HorizontalAlignment="Center" Content="{Binding Title}" ToolTip.Tip="{Binding Title}"/>
+        <Image Source="{Binding Thumbnail}" HorizontalAlignment="Stretch"></Image>
+        
     </StackPanel>
 </Window>
