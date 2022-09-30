@@ -1,0 +1,20 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:OpenMediaDownloader.Controls">
+    <Design.PreviewWith>
+        <controls:ContentBox />
+    </Design.PreviewWith>
+
+    <Style Selector="controls|ContentBox">
+        <!-- Set Defaults -->
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Border BorderBrush="Black" BorderThickness="1">
+                    <StackPanel>
+                        <Label>testtt</Label>
+                    </StackPanel>
+                </Border>
+            </ControlTemplate>
+        </Setter>
+    </Style>
+</Styles>

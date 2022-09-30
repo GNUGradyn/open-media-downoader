@@ -10,5 +10,6 @@
         <FluentTheme Mode="Light"/>
         <!-- Custom templated controls -->
         <StyleInclude Source="/Controls/Search.axaml"></StyleInclude>
+        <StyleInclude Source="/Controls/ContentBox.axaml"></StyleInclude>
     </Application.Styles>
 </Application>
