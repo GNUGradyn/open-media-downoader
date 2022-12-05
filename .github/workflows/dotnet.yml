@@ -23,5 +23,5 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Publish
-      run: dotnet pubilsh
+      run: dotnet publish
 
