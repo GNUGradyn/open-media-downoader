@@ -14,7 +14,7 @@ public class YoutubeDlService : IYoutubeDlService
         {
             StartInfo = new ProcessStartInfo
             {
-                FileName = "External/youtube-dl.exe",
+                FileName = "External/yt-dlp.exe",
                 Arguments = $"-j {url}",
                 UseShellExecute = false,
                 RedirectStandardOutput = true,
