@@ -9,11 +9,14 @@
         <!-- Set Defaults -->
         <Setter Property="Template">
             <ControlTemplate>
-                <Border BorderBrush="Black" BorderThickness="1">
-                    <StackPanel>
-                        <Label>testtt</Label>
-                    </StackPanel>
-                </Border>
+                    <Border Margin="5" BorderBrush="#dcdcdc" BorderThickness="1">
+                        <StackPanel>
+                            <Label Background="#F0F0F0" Margin="10 -12 0 0" HorizontalAlignment="Left">Test</Label>
+                            <StackPanel Margin="10">
+                        
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
             </ControlTemplate>
         </Setter>
     </Style>

@@ -1,13 +1,15 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="using:OpenMediaDownloader"
-             x:Class="OpenMediaDownloader.App">
+             x:Class="OpenMediaDownloader.App"
+             RequestedThemeVariant="Light"
+             >
     <Application.DataTemplates>
         <local:ViewLocator/>
     </Application.DataTemplates>
 
     <Application.Styles>
-        <FluentTheme Mode="Light"/>
+        <FluentTheme />
         <!-- Custom templated controls -->
         <StyleInclude Source="/Controls/Search.axaml"></StyleInclude>
         <StyleInclude Source="/Controls/ContentBox.axaml"></StyleInclude>

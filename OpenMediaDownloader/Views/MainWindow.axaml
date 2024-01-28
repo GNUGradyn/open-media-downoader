@@ -20,6 +20,6 @@
         <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"></StackPanel>
         <ProgressBar Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Height="30"></ProgressBar>
         <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0 3 0 0">Overall Progress</Label>
-        <Label FontSize="12" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center">Copyright Gradyn Wursten. Powered by youtube-dl</Label>
+        <Label FontSize="12" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center">Copyright Gradyn Wursten. Powered by yt-dlp</Label>
     </Grid>
 </Window>

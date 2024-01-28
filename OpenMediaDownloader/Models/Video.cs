@@ -12,4 +12,8 @@ public class Video
     public string Uploader { get; set; }
     [JsonProperty("thumbnail")]
     public string Thumbnail { get; set; }
+    [JsonProperty("width")]
+    public int Width { get; set; }
+    [JsonProperty("height")]
+    public int Hegiht { get; set; } 
 }
